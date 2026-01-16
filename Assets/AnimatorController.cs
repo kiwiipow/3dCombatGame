@@ -31,5 +31,10 @@ public class AnimatorController : MonoBehaviour
         animator.SetFloat("Blend", velocity);
         animator.SetBool("IsJump", Input.GetKey(KeyCode.Space));
         animator.SetBool("IsDuck", Input.GetKey(KeyCode.LeftShift));
+        animator.SetBool("IsDead", Input.GetKey(KeyCode.F1));
+        animator.SetBool("IsImpact", Input.GetKey(KeyCode.F2));
+        animator.SetBool("IsLowAttack", Input.GetKey(KeyCode.UpArrow));
+        animator.SetBool("IsLongAttack", Input.GetKey(KeyCode.DownArrow));
+        animator.SetBool("IsQuickAttack", Input.GetKey(KeyCode.LeftArrow));
     }
 }
